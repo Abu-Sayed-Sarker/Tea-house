@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+/* ------------share style--------------------- */
+:root {
+    --font-color: black;
+    --gradiant-color-1: #EC9F05;
+    --gradiant-color-2: #FF4E00;
+    --tittle-p-color: rgba(0, 0, 0, 0.9);
+    --normal-p-color: rgba(0, 0, 0, 0.7);
+    --p-size: 0.875rem;
+    --button-text-color: #fff;
+}
+
+.contanear {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+/* -------------------banner section----------------- */
+.banner-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.banner-tittle {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-tittle h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    max-width: 90%;
+    color: var(--font-color);
+}
+
+.banner-tittle p {
+    font-size: var(--p-size);
+    color: var(--normal-p-color);
+    max-width: 355px;
+    margin: 20px 0;
+}
+
+.banner-tittle button {
+    border: none;
+    padding: 18px 18px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, var(--gradiant-color-1), var(--gradiant-color-2));
+    color: var(--button-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner-image {
+    width: 50%;
+    position: relative;
+}
+
+.banner-image img {
+ max-width: 620px;
+}
+.card{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 250px;
+    gap: 20px;
+}
+.card .icon{
+    font-size: 2rem;
+    color: var(--gradiant-color-1);
+}
+.card .card-tittle h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.card .card-tittle p{
+    font-size: var(--p-size);
+    color: var(--normal-p-color);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+@media  only screen and (max-width: 456px) {
+    .contanear{
+        max-width: 80%;
+    }
+    /* -------------------banner section----------------- */
+    .banner-section{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .banner-tittle h1{
+        max-width: 100%;
+        font-size: 3rem;
+    }
+    .banner-image img{
+        max-width: 370px;
+    }
+    .card{
+        width: 200px;
+        left: 96%;
+    }
+    .card .card-tittle h4{
+        margin-top: 10px;
+    }
+    .card .card-tittle p{
+        margin-bottom: 10px;
+    }
+
+}
+
