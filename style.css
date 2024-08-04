@@ -31,11 +31,12 @@ body {
 .banner-section {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 55px;
+    justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 .banner-tittle {
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -66,18 +67,17 @@ body {
 }
 
 .banner-image {
-    width: 50%;
     position: relative;
 }
 
 .banner-image img {
- max-width: 620px;
+    width: 100%;
 }
-.card{
+.banner-image .card{
     position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
+    right: 34%;
+    top: 80%;
+    transform: translate(-50% -50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +102,55 @@ body {
     margin-bottom: 20px;
 }
 
+/* ---------------------------Our Featured Products section-------------------------- */
+.featured-tittle{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 540px;
+}
+.featured-tittle h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--font-color);
+}
+.featured-tittle p{
+    font-size: var(--p-size);
+    color: var(--tittle-p-color);
+    margin: 20px 0;
+    
+}
+.feature-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+.item{
+    width: 250px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+.item img{
+    margin: 20px auto;
+}
+.item h4{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.item p{
+    font-size: var(--p-size);
+    color: var(--normal-p-color);
+    text-align: center;
+    margin: 5px 15px 20px 15px;
+}
+
 
 
 
@@ -116,17 +165,18 @@ body {
     .banner-section{
         flex-direction: column;
         gap: 50px;
+        margin-bottom: 100px;
+    }
+    .banner-tittle{
+        width: 100%;
     }
     .banner-tittle h1{
         max-width: 100%;
         font-size: 3rem;
     }
-    .banner-image img{
-        max-width: 370px;
-    }
-    .card{
+    .banner-image .card{
         width: 200px;
-        left: 96%;
+        right: 28%;
     }
     .card .card-tittle h4{
         margin-top: 10px;
@@ -135,5 +185,12 @@ body {
         margin-bottom: 10px;
     }
 
+    /* --------------------------Our Featured Products section--------------------------------  */
+    .featured-tittle p{
+        margin: 15px 0;
+    }
+    .feature-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
