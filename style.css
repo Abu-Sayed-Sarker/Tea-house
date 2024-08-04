@@ -131,11 +131,12 @@ body {
 }
 .item{
     width: 250px;
-    background-color: aliceblue;
+    background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .item img{
     margin: 20px auto;
