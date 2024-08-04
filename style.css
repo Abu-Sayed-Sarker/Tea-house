@@ -268,7 +268,7 @@ body {
         gap: 10px;
     }
     #boxes{
-        width: 200px;
+        max-width: 180px;
     }
     .tea-tittle-text{
         width: 100%;
