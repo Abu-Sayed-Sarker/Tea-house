@@ -151,6 +151,71 @@ body {
     text-align: center;
     margin: 5px 15px 20px 15px;
 }
+/* ------------------------------Great Tea section----------------------  */
+.great-tea-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+.tea-images{
+    display: grid;
+    grid-template-areas: "hed1 hed2"
+                         "fot1 hed2"
+                         "fot1 fot2";
+    justify-content: center;
+    gap: 20px;
+}
+#boxes{
+    width: 210px;
+}
+.box1{
+    height: 150px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #fff9f9, 	#ffeeee);
+    grid-area: hed1;
+}
+.box2{
+    background-color: #ffe599;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    grid-area: hed2;
+}
+.box3{
+    background-image: linear-gradient(to right, #e3e3e3, #fff);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    grid-area: fot1;
+}
+.box4{
+    height: 150px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #e3e3e3, #fff);
+    grid-area: fot2;
+}
+.tea-tittle-text{
+    width: 50%;
+}
+.tea-tittle-text h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--font-color);
+    margin-bottom: 20px;
+
+}
+.tea-tittle-text p{
+    font-size: var(--p-size);
+    color: var(--normal-p-color);
+}
+.tea-tittle-text h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--font-color);
+    margin: 20px 0;
+}
 
 
 
@@ -193,5 +258,24 @@ body {
     .feature-items{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* ------------------------------Great Tea section----------------------  */
+    .great-tea-section{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .tea-images{
+        gap: 10px;
+    }
+    #boxes{
+        width: 200px;
+    }
+    .tea-tittle-text{
+        width: 100%;
+    }
+    .tea-tittle-text h1{
+        font-size: 2rem;
+    }
+
 }
 
