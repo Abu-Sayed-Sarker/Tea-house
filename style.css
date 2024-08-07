@@ -217,6 +217,94 @@ body {
     margin: 20px 0;
 }
 
+/* ---------------------client section-------------------------  */
+.client-section{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--gradiant-color-1), var(--gradiant-color-2));
+    border-radius: 10px;
+}
+.super-client{
+    max-width: 50%;
+    padding: 0 20px 0 100px;
+}
+.super-client h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--button-text-color);
+    margin-bottom: 20px;
+}
+.super-client p{
+    font-size: var(--p-size);
+    color: var(--button-text-color);
+    margin-bottom: 20px;
+}
+.super-client button{
+    border: none;
+    padding: 18px 18px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--tittle-p-color);
+    background-color: var(--button-text-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+.clients{
+    position: relative;
+}
+.client img{
+    position: absolute;
+    top: -25px;
+    border: 4px solid #fff;
+    left: -25px;
+    border-radius: 50%;
+}
+.client{
+    max-width: 350px;
+    background-color: var(--button-text-color);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.client p{
+    font-size: var(--p-size);
+    color: var(--normal-p-color);
+    margin-top: 30px;
+}
+.client h4{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--font-color);
+    margin: 20px 0 10px 0;
+}
+.client h3{
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--normal-p-color);
+}
+.client-1{
+    opacity: 0.5;
+    margin-top: 120px;
+    left: 120px;
+}
+.client-3{
+    opacity: 0.5;
+    margin-bottom: 120px;
+    left: 120px;
+    margin-top: 60px;
+    top: 50%;
+    z-index: 1;
+}
+
+.client-2{
+    position: absolute;
+    z-index: 10;
+    top: 36%;
+} 
+
 
 
 
@@ -276,6 +364,31 @@ body {
     .tea-tittle-text h1{
         font-size: 2rem;
     }
+
+    /* -----------------------------client section ---------------------------- */
+    .client-section{
+        flex-direction: column;
+    }
+    .super-client{
+        max-width: 100%;
+        padding: 15px;
+    }
+    .super-client h1{
+        font-size: 2rem;
+    }
+    .client{
+        max-width: 310px;
+    }
+    .client-3{
+        left: 0px;
+        margin-bottom: 60px;
+    }
+    .client-1{
+        left: 0px;
+        margin-bottom: 60px;
+    }
+    
+
 
 }
 
